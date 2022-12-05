@@ -1,0 +1,110 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+background-color: bisque;
+height: 100%;
+
+}
+
+.pai{
+position: relative ;
+width: 400px;
+height: 400px;
+background-color: red;
+
+}
+
+.filho1{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    z-index: 3;
+    
+    
+}
+
+.filho2{
+    position:absolute;
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    z-index:1;
+}
+
+.posicao{
+position:absolute;
+left:100px;
+ background-color: coral;
+ width: 200px;
+ height: 300px;
+ z-index: 2;
+ 
+}
+
+
+  .absolute{
+    width: 80%;
+    height: 400px;
+    position:relative;
+    margin:100px;
+    background-color: aqua;
+}
+
+.posicao2{
+    position:absolute;
+    left:100px;
+    background-color: coral;
+    width: 200px;
+    height: 300px;
+
+}
+
+.fixed{
+    position: fixed;
+    background-color:white;
+    width: 100%;
+    height: 200px;
+    bottom:0;
+   
+}
+     
+
+
+
+.stick{
+    position: sticky;
+    background-color:pink;
+    width: 80%;
+    height: 300px;
+    bottom:0;
+    top:0;
+    z-index: 1;
+   
+}
+
+ul{
+height: 100px;
+overflow-y: auto;
+}
+
+ul li.esticando{
+    position:sticky;
+    background-color: gray;
+    top:0;
+}
+
+.relative{
+    position: relative ;
+    bottom: 800px;
+    left:200px;
+    width: 400px;
+    height: 400px;
+    background-color: mediumslateblue;
+
+}

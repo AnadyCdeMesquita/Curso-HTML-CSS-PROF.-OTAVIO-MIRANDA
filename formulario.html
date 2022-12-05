@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--O READONLY é um atributo de entrada especifica que um campo de entrada é somente leitura.-->
+    <!--O MULTIPLE é um atributo de entrada especifica que o usuário pode inserir mais de um valor em um campo de entrada.
+
+    O MULTIPLE é um atributo funciona com os seguintes tipos de entrada: email e arquivo.-->
+    <!--O TARGET (atributo alvo) especifica onde exibir a resposta recebida após o envio do formulário.-->
+    <!--O AUTOCOMPLETE é um atributo que especifica se um formulário deve ter o preenchimento automático ativado ou desativado.-->
+    <!--O AUTOCOMPLETE é um atributo de entrada especifica se um formulário ou um campo de entrada deve ter o preenchimento automático ativado ou desativado.-->
+    <!--O MAXLENGHT é um tributo de entrada especifica o número máximo de caracteres permitidos em um campo de entrada.-->
+    <form target="_blank" autocomplete="on">
+<h1>Cabeça</h1>
+<p>Formulario</p>
+
+<fieldset><br>
+<legend>Descrição</legend>
+<!--Podemos utilizar o DISABLED(para não escrever-desabilidade) e
+    REQUERED-obrigatório, NÃO ESQUECER QUE OS FORMULÁRIO SÃO DISPLAY INLINE-->
+<label for="nome">Nome</label>
+<input type="text" id="nome" name="nome" placeholder="seu nome" autofocus><br>
+
+
+<br>
+<p> <!-- INPUT TYPE CHECKBOX várias opções-->
+        <p>QUAL O SEU TIPO DE LIVRO FAVORITO?</p><br>
+
+        <input type="checkbox" id="tipo1" name="tipo1" value="drama" autofocus>
+        <label class="block" for="tipo1"> drama</label>
+       
+        <input type="checkbox" id="tipo2" name="tipo2" value="comédia" autofocus>
+        <label class="block" for="tipo2"> comédia</label>
+        
+        <input type="checkbox" id="tipo3" name="tipo3" value="aventura"autofocus>
+        <label class="block" for="tipo3">aventura</label>
+        
+</p>
+
+<p> <!--INPUT TYPE RADIO -uma opção-->
+Qual a sua cor favorita? <br>
+<label for="verde">Verde</label>
+<input type="radio" id="verde" name="cor" value="verde">
+
+<label for="amarela">Amarela</label>
+<input type="radio" id="amarela" name="cor" value="amarela">
+
+<label for="vermelha">Vermelha</label>
+<input type="radio" id="vermelha" name="cor" value="vermelha">
+    </p>
+
+    <p>
+
+<label for="date">Data</label>
+<input type="date" id="date" name="date" value="date" value="2022-06-11">
+    </p>
+    
+<p>
+ <label for="datetime-local">DataTime</label>
+ <input type="datetime-local" id="datetime-local" name="datetime-local" value="2022-06-09T20:00">
+</p>
+<br>
+
+<p>
+    <!--Muito utilizado para solicitar anexar foto, qualquer extensão-->
+    <label for="arquivodefoto">Anexe sua foto</label>
+    <input type="file" id="arquivodefoto" name="arquivodefoto" accept=".jpg, .png, image/*" multiple="2">
+   </p>
+   <br>
+   <!--O STEP é o atributo de entrada especifica os intervalos de número legal para um campo de entrada.
+    Exemplo: se step="3", os números legais podem ser -3, 0, 3, 6, etc.-->
+   <p>
+    <label for="number">Numero</label>
+    <input type="number" id="number" name="number" min="0" max="50" step="10">
+   </p>
+
+   <br>
+   <br>
+   <p>
+    <label for="range">Range</label>
+    <input type="range" id="range" name="range" min="0" max="50" step="10">
+   </p>
+
+   <br>
+   <br>
+   <p>
+    <label for="password">Senha</label>
+    <input type="password" id="password" name="password" autofocus>
+   </p>
+<p>
+   <label for="colors">Pick a color (preferably a red tone):</label>
+<input type="color" list="redColors" id="colors" />
+<datalist id="redColors">
+  <option value="#800000"></option>
+  <option value="#8B0000"></option>
+  <option value="#A52A2A"></option>
+  <option value="#DC143C"></option>
+</datalist>
+</p>
+<br>
+
+
+<p>
+<label for="popularHours">Qual a hora?</label>
+<input type="time" list="popularHours"/>
+<datalist id="popularHours">
+  <option value="12:00"></option>
+  <option value="13:00"></option>
+  <option value="14:00"></option>
+</datalist>
+</p>
+
+<p>
+<label for="url">Qual a sua URL</label>
+<input type="url" id="url" name="url">
+</p>
+
+
+
+<br>
+<p>
+<!--selected já está selecionado-->
+    
+<label for="cars">Escolha uma carro:</label>
+   
+    <select id="cars">
+    <option value="volvo">Volvo</option>
+   <option value="saab">Saab</option>
+    <option value="vw">VW</option>
+    <option value="audi" selected>Audi</option>
+</select>
+<label for="moto">Escolha uma moto:</label>
+        <select id="moto">
+        <option value="honda">Honda</option>
+       <option value="Yahama" disabled>Yahama</option>
+        <option value="bugo">Bugo</option>
+        <option value="flow" selected>flow</option>
+       
+    </select>
+    </p>
+
+<br><br>
+<!--A <OPTGROUP>tag é usada para agrupar opções relacionadas em um elemento <select> (lista suspensa).
+
+Se você tiver uma longa lista de opções, os grupos de opções relacionadas serão mais fáceis de manipular para um usuário.-->
+<p>
+    <label for="cars">Escolha um carro:</label>
+    <select  name="cars" id="cars">
+      <optgroup label="Carros Suecos">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="Carros Alemães">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select>
+</p>
+<br> <br>
+<p>
+<label class="area" for="textearea">Deixe sua msg</label>
+<textarea id="textarea" name="textarea" rows="10" cols="40"></textarea>
+</p>
+
+<p>
+    <!--INPUT TYPE BUTTON RESET E SUBMIT-->
+<button type="reset">Reset</button>
+<button type="submit">Enviar</button>
+</p>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+</fieldset>
+
+
+
+    </form>
+
+
+   
+</body>
+</html>

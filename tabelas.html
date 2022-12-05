@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tabelas.css">
+    <title>tabelas</title>
+</head>
+<body>
+<h1> Tabelas</h1>
+
+<!--Uma div foi aberta para colocar o overflow-barra de rolagem para melhor visualização no celular-->
+<div class="siteresponsive">
+<!--Dentro de table há o cabeçalho <thead> e no corpo é o <tbody>. Sempre que fizer
+    um linha tem que fazer o <tr> mais as colunas <th-cabeçalho> + <td- de coluna> -->
+    <table>
+        <!--O caption é o tema da  tabela, pode se colocar em cima, embaixo, direita e esquerda através
+        do caption side-->
+    <caption>Tabela de ESTUDO</caption>
+    <thead>
+    <tr>
+   <th>tabela 1</th>
+   <th>tabela 2 </th>
+   <th>tabela 3</th>
+
+    </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <!--Pode-se usar o colspan para suprimir coluna, mas tem que excluir o <td> se não vai
+                passar..o COLSPAN É VERTICAL, DA DIREITA PARA ESQUERDA--->
+    <td colspan="2">Corpo 1</td>
+    <td> Corpo 2</td>
+    
+         </tr>
+
+         <tr>
+    <td>Corpo 1</td>
+    <td> Corpo 2</td>
+    <td> Corpo 3</td>
+
+         </tr>
+
+        <tr>
+        <td>Corpo 1</td>
+        <td> Corpo 2</td>
+        <td> Corpo 3</td>
+    
+        </tr>
+    </tbody>
+
+    <tfoot>
+     <tr>
+         <!--Pode-se usar o rowspan para suprimir coluna, mas tem que excluir o <td> se não vai
+                passar, o ROWSPAN É HORIZONTAL DE BAIXO PARA CIMA-->
+        <td rowspan="2" colspan="2">Corpo 1</td>
+        
+    </tr>
+        
+        <tr>
+            <td>Corpo 1</td>
+           
+        </tr>
+            
+    </tfoot>
+
+    </table>
+
+</div>
+    
+</body>
+</html>
