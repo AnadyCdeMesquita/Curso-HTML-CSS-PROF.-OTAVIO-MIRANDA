@@ -1,0 +1,35 @@
+
+
+.pai h1+p{
+    background-color: bisque;
+}
+
+.pai p+h1{
+    background-color: rgb(9, 147, 71);
+}
+
+.teste h1~p{
+    background-color: rgb(186, 33, 153);
+}
+
+.teste p~h1{
+    background-color: rgb(147, 9, 9);
+}
+
+.teste1 h3~span{
+    background-color: blueviolet;
+}
+
+.teste1 p~h3{
+    background-color: crimson;
+}
+
+.teste1 p+h3{
+    background-color: rgb(63, 20, 220);
+}
+
+[meu-atributo="valor"]{
+    background-color: green;
+
+
+}

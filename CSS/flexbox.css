@@ -1,0 +1,44 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.container{
+    margin-top: 100px;
+    background-color: chartreuse;
+    width: 100%;
+    height: 600px;
+    display:flex;
+   
+   
+}
+
+.flex{
+    background-color: aqua;
+    width: 25%;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 22px;
+}
+
+.flex1{
+    background-color: rgb(255, 0, 166);
+    width: 25%;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 22px;
+} 
+
+.flex2{
+    background-color: red;
+    width: 25%;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 22px;
+    
+}
