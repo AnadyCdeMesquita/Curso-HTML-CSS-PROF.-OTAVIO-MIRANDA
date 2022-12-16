@@ -92,5 +92,7 @@ main p:last-child{
     color: antiquewhite;
 }
 
-
+.testando1 p:nth-child(3n){
+    background-color: aqua;
+}
    
