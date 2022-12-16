@@ -21,15 +21,14 @@
 }
 
 .teste1 p~h3{
-    background-color: crimson;
+    background-color: rgb(91, 82, 84);
 }
 
 .teste1 p+h3{
     background-color: rgb(63, 20, 220);
 }
 
-[meu-atributo="valor"]{
-    background-color: green;
-
-
+[meu-atributo|="valor-one"] {
+        background-color: aqua;
+    
 }
