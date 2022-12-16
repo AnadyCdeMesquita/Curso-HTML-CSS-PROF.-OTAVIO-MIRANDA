@@ -32,3 +32,11 @@
         background-color: aqua;
     
 }
+
+.neta{
+    background-color: rgb(145, 169, 25);
+}
+
+.chefe > .filhote{
+    background-color:rgb(100, 0, 0);
+}
