@@ -36,6 +36,7 @@
     height:200px;
     margin: 20px;
     border-bottom-left-radius: 200px;
+    box-shadow: -20px -20px 10px blue;
 }
 
 .media .media4{
@@ -44,4 +45,13 @@
     height:200px;
     margin: 20px;
     border-bottom-right-radius: 250px;
+}
+
+h1{
+    text-shadow: -30px 20px rebeccapurple;
+    margin: 30px;
+}
+
+h2{
+    text-shadow: 30px -20px rgb(64, 0, 255) ;
 }
