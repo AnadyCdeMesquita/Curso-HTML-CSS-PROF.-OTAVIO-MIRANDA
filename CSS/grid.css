@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    
+    display: grid;
+    margin: 0, auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*pode ser usado repeat (10, 1fr) o 10 significa repetir 10 vezes, posso fazer com row*/
+/* para não haver overflow pode colocar: repeat (auto-fill, minmax(320px, 1fr))
+/* esses 320 px é referente ao tamanho do dispositivo, responsividade*/
+    gap: 30px; /*espaço entre as "linhas e colunas pode ser usa gap-row e gap-column, bem como um short: 
+    gap com ambos valoes GAP 30PX E 80PX - LINHAS E COLUNAS */ 
+    grid-template-rows: 2fr 1fr 3fr;
+}
+
+.grid div{
+    background-color: aquamarine;
+    min-height: 100px;
+}
+
+.grid div:nth-child(5){
+    background-color: bisque;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    /*coluna começa e termina*/
+    /*pode ser tmb, no caso da linha grid-row: span 6; ou grid-column: span 38*/
+
+}
